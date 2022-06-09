@@ -43,4 +43,10 @@ You can update the key and values using this:
     Writer<OStreamWrapper> writer2 { osw };
     doc.Accept( writer2 );
     
-
+For iterating through the json file use:
+    
+    for (Value::MemberIterator itr = doc.MemberBegin(); itr != doc.MemberEnd(); ++itr)
+    {
+       std::cout<<itr->name.GetString(); //Key  
+    }
+    
