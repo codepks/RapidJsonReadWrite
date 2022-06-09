@@ -1,0 +1,4 @@
+StringStream is the most basic input stream. It represents a complete, read-only JSON stored in memory. It is defined in rapidjson/rapidjson.h
+
+StringBuffer is a simple output stream. It allocates a memory buffer for writing the whole JSON. Use GetString() to obtain the buffer.
+
